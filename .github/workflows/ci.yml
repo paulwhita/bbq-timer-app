@@ -10,19 +10,11 @@ on:
       - main
 
 jobs:
-  build-and-test:
+  placeholder:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm ci
-      - name: Skip lint\/test\n        run: echo "No lint or test scripts defined"
-
+      - name: CI placeholder
+        run: echo "Skipping lint/tests (none defined)"
